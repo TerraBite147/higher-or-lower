@@ -1,39 +1,112 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Higher Or Lower
+![Higher or Lower logo ](/README/Images/logo.png)
 
-Welcome,
+## Welcome to the Higher or Lower! 
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This interactive web-based game challenges players to test their intuition and card-guessing skills. The objective is straightforward: accumulate 50 points by correctly guessing whether the next card will be higher or lower in value than the current card. The game features scoring, point banking, and a winner's page, making it an engaging and enjoyable experience for players of all ages. Have fun and see if you can reach the goal of 50 points!
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+![AmIResponsive Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
 
-## Codeanywhere Reminders
+## Features 
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Existing Features
 
-`python3 -m http.server`
+- __Navigation Bar__
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+  - A simple navigation bar that displays the Higher or Lower Logo that acts as a link to the home page. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+![NAV Bar](/README/Images/nav-bar.png)
 
-`http_server`
+- __The landing page image__
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  - The landing includes the logo and options that allow the user to start the game, check the rules and report and issue. 
+  - This section introduces the user to Higher or Lower with a simple and clear design.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+![home Page](/README/Images/home.png)
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- __The Game__
+  
+  - When a user clicks the new game button the screen will change to the game window.
+  - In the center a card will be displayed and the user will be asked to guess if the next card will be higher or lower than the current card.
+  - The goal of the game to to get to 50 points with the least amount of guesses.
+  - Guessing correct will grant them a streak point, guessing multiple in a row will double the streak points. for example 1 correct guess will give 1 streak point, 2 correct will give 2, 3 correct will give 4 ect.
+  - The user will always have the option to bank the points to secure them.
+  - If the user guesses wrong the streak will reset back to 0 without the option to bank.
+  - In the bottom left the banked points will be displayed.
+  - In the bottom center the current streak points will be displayed.
 
-To log into the Heroku toolbelt CLI:
+![Game window](README/Images/game.png)
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- __Winner page__
+  
+  - When the user reaches 50 or more points the user will be greeted with a congratulations page.
+  - The page will display how many points were banked and in how many turns.
+  - An option to play a new game in present on the page.
+  - If the user presses the X button in the top right the user will be redirected to the home page.
+  
+![Winner Window](README/Images/winner.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+- __Rules__
 
----
+  - When a user clicks the rules button the rules window will appear.
+  - The rules of the game have be clearly explained.
+  - An option to start a new game is present on the page so the user can imedatly start playing rather than going but to the home page.
+  - If the user presses the X button in the top right the user will be redirected to the home page.
 
-Happy coding!
+![Rules Window](README/Images/rules.png)
+
+- __The Footer__ 
+
+  - The footer section includes links to the relevant social media sites for Higher or Lower. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer also includes a disclaimer and credits.
+
+![Footer](/README/Images/footer.png)
+
+- __Report and Issue__
+
+  - This page will allow the user to send any issues they may have come across while playing the game.
+  - The page includes a field for the user's name and email address and text box to describe the issue.
+
+![Report an issue](image.png)
+
+### Features Left to Implement
+
+- A username to record previous scores.
+- A leader board to compare the user's personal best with other users'.
+
+## Testing 
+
+
+### Validator Testing 
+
+- HTML
+  - [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+- CSS
+  - [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+
+### Unfixed Bugs
+
+
+## Deployment
+
+This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here - 
+
+
+## Credits 
+
+
+### Content 
+
+- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+
+### Media
+
+- [Logo](https://www.vecteezy.com/vector-art/8552552-up-down-arrows-icon-inside-the-circle-upward-downward-business-logo-two-way-arrow-symbol-vector-for-your-website-design-logo-app-ui-illustration-eps-10)
+- [Cards](https://www.pngegg.com/en/png-nnrxg)
