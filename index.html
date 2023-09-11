@@ -34,11 +34,11 @@
                 <h1><span class="red">HIGHER</span> OR LOWER</h1>
             </div>
             <div id="game-buttons">
-                <button class="red" id="new-game">New Game</button>
-                <button id="rules">Rules</button>
+                <button class="red buttons" id="new-game">New Game</button>
+                <button class="buttons" id="rules">Rules</button>
             </div>
             <div id="other-buttons">
-                <button id="issue">Report An Issue</button>
+                <button class="buttons" id="issue">Report An Issue</button>
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none"
                 class="up-down-svg" id="up-down-bottom-right">
@@ -59,6 +59,11 @@
     <dialog class="rules-modal" id="rules-modal">
         <div id="rules-container">
             <h1><span class="red">HIGHER</span> OR LOWER</h1>
+            <button id="exit-rules"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 9L9 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 9L15 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg></button>
             <h2>RULES</h2>
             <p id="rules-paragraph">The Objective of Higher or Lower is to guess whether the next card is <span
                     class="red">higher</span> or
@@ -70,7 +75,7 @@
                 Restart the game anytime to start fresh. <br> <br>
                 Enjoy testing your card-guessing skills and aiming for victory!
             </p>
-            <button class="red center" id="new-game2">New Game</button>
+            <button class="red center buttons" id="new-game2">New Game</button>
         </div>
     </dialog>
 
