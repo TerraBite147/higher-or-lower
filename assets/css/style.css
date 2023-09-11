@@ -16,10 +16,9 @@ header {
 body {
   background: #d9d9d9;
 }
-.red{
+.red {
   color: #d62424;
 }
-
 
 .header-logo {
   display: flex;
@@ -38,6 +37,35 @@ body {
 .logo {
   flex-shrink: 0;
 }
-.logo-small{
+.logo-small {
   width: 64px;
+}
+
+/* Footer Style */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 53px;
+  background: #000;
+}
+
+/* Footer Links Styles */
+#footer-links {
+  display: flex;
+}
+#footer-links a {
+  display: flex;
+}
+
+/* Footer disclaimer Styles */
+#footer-disclaimer {
+  padding: 0;
+  color: #e73539;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 13.2px */
+  text-transform: uppercase;
 }
