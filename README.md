@@ -104,6 +104,8 @@ The live link can be found here -
 
 ### Content 
 
+- Kevin Powell's youtube tutorial on dialog https://youtu.be/TAB_v6yBXIE?si=yBL_Eyxm_FZwzFfG
+
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
