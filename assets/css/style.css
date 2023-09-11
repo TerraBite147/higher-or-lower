@@ -10,7 +10,7 @@
 }
 
 header {
-  height: 150px;
+  height: 85px;
 }
 
 body {
@@ -26,7 +26,12 @@ body {
   align-items: center;
   background: #ffffff;
 }
+.header-logo img {
+  height: 50px;
+}
+
 .header-logo h1 {
+  height: 36px;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
@@ -35,10 +40,65 @@ body {
 }
 
 .logo {
-  flex-shrink: 0;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 60px;
 }
 .logo-small {
   width: 64px;
+}
+
+.home {
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid #000;
+  background: #fff;
+  margin: 15px 10px;
+  min-height: 405px;
+}
+.up-down-svg {
+  position: relative;
+  margin: 5px;
+}
+#up-down-bottom-right{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/*Game Buttons Style*/
+#game-buttons{
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 170px;
+  gap: 17px;
+}
+button {
+  width: 120px;
+  height: 32px;
+  border: 1px solid #000;
+  border-radius: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 110%; /* 26.4px */
+  text-transform: uppercase;
+}
+
+#other-buttons{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#issue{
+  position: absolute;
+  font-size: 16px;
+  bottom: 40px;
 }
 
 /* Footer Style */
