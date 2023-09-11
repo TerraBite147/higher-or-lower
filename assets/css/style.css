@@ -88,13 +88,13 @@ button {
   line-height: 110%; /* 26.4px */
   text-transform: uppercase;
 }
-
+/* New game and Rules button */
 #other-buttons{
   display: flex;
   justify-content: center;
   width: 100%;
 }
-
+/* report an issue button */
 #issue{
   position: absolute;
   font-size: 16px;
@@ -128,4 +128,37 @@ footer {
   font-weight: 700;
   line-height: 110%; /* 13.2px */
   text-transform: uppercase;
+}
+
+
+/* rules modal */
+
+.rules-modal {
+  background: none;
+  top: 85px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  max-width: 100%;
+  width: 100%;
+}
+#rules-container{
+  border-radius: 16px;
+  border: 1px solid #000;
+  background: #fff;
+  margin: 15px 10px;
+  min-height: 405px;
+}
+
+#rules-container *{
+  text-align: center;
+}
+
+#rules-paragraph{
+  position: relative;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%; /* 17.6px */
 }
