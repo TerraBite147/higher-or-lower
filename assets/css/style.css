@@ -23,6 +23,9 @@ body {
 .red a {
   color: #d62424;
 }
+a{
+  color: #000;
+}
 
 .center {
   position: relative;
