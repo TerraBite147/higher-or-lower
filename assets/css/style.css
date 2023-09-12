@@ -230,3 +230,15 @@ footer {
   font-weight: 700;
   line-height: 110%;
 }
+
+#cards-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cards-container img {
+  height: 45vh ;
+  margin-bottom: 100px;
+}
