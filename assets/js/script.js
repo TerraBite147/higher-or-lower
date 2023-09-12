@@ -8,3 +8,7 @@ openRules.addEventListener('click', () => {
 closeRules.addEventListener('click', () => {
     modal.close();
 })
+
+
+
+

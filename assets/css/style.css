@@ -61,7 +61,8 @@ body {
   border: 1px solid #000;
   background: #fff;
   margin: 15px 10px;
-  min-height: 405px;
+  /* Below added to make the content fill the entire page */
+  min-height: calc(100vh - 169px); 
 }
 .up-down-svg {
   position: relative;
