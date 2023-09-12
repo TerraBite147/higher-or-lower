@@ -7,6 +7,7 @@
   border-style: none;
   box-sizing: border-box;
   font-family: "Saira Condensed", sans-serif;
+  
 }
 
 header {
@@ -16,9 +17,15 @@ header {
 body {
   background: #d9d9d9;
 }
+
 .red {
   color: #d62424;
 }
+.red a{
+  color: #d62424;
+}
+
+
 .center{
   position: relative;
   left:50%;
@@ -74,7 +81,7 @@ body {
   right: 0;
 }
 /*Game Buttons Style*/
-#game-buttons {
+#control-buttons {
   position: absolute;
   align-items: center;
   text-align: center;
@@ -180,4 +187,39 @@ footer {
   top: 26px;
   right: 20px;
   background: none;
+}
+
+#score-container{
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#banked-pts{
+  margin-right: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score{
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%; /* 26.4px */
+text-transform: uppercase;
+}
+
+#game-btns{
+  position: absolute;
+  bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  gap: 11px;
 }

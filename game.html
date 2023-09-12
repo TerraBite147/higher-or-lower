@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Higher or Lower</title>
@@ -17,6 +18,7 @@
     </header>
     <main>
         <div class="home">
+            <!-- SVG ICON -->
             <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none"
                 class="up-down-svg" id="up-down-top-left">
                 <g clip-path="url(#clip0_24_11)">
@@ -30,16 +32,25 @@
                     </clipPath>
                 </defs>
             </svg>
-            <div class="logo header-logo">
-                <h1><span class="red">HIGHER</span> OR LOWER</h1>
+            <div id="score-container">
+                <span id="banked" class="red score">Banked: </span><span id="banked-pts" class="score">0</span>
+
+                <span id="streak" class="red score">Steak: </span><span id="streak-pts" class="score">0</span>
             </div>
-            <div id="control-buttons">
-                <button class="red buttons" id="new-game"><a href="game.html">New Game</a></button>
-                <button class="buttons" id="rules"> Rules</button>
+
+
+            <!-- Game Buttons -->
+            <div id="game-btns">
+                <div id="btn-row-1">
+                    <button class="red buttons" id="higher-btn">Higher</button>
+                    <button class="buttons" id="lower-btn">Lower</button>
+                </div>
+
+                <div id="btn-row-2">
+                    <button class="buttons" id="bank-btn">Bank</button>
+                </div>
             </div>
-            <div id="other-buttons">
-                <button class="buttons" id="issue">Report An Issue</button>
-            </div>
+            <!-- SVG Icon -->
             <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none"
                 class="up-down-svg" id="up-down-bottom-right">
                 <g clip-path="url(#clip0_24_11)">
@@ -59,11 +70,16 @@
     <dialog class="rules-modal" id="rules-modal">
         <div id="rules-container">
             <h1><span class="red">HIGHER</span> OR LOWER</h1>
-            <button id="exit-rules"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M15 9L9 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M9 9L15 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg></button>
+            <button id="exit-rules"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none">
+                    <path
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15 9L9 15" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M9 9L15 15" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg></button>
             <h2>RULES</h2>
             <p id="rules-paragraph">The Objective of Higher or Lower is to guess whether the next card is <span
                     class="red">higher</span> or
