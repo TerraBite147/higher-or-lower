@@ -7,7 +7,6 @@
   border-style: none;
   box-sizing: border-box;
   font-family: "Saira Condensed", sans-serif;
-  
 }
 
 header {
@@ -21,14 +20,13 @@ body {
 .red {
   color: #d62424;
 }
-.red a{
+.red a {
   color: #d62424;
 }
 
-
-.center{
+.center {
   position: relative;
-  left:50%;
+  left: 50%;
   transform: translate(-50%);
 }
 
@@ -69,7 +67,7 @@ body {
   background: #fff;
   margin: 15px 10px;
   /* Below added to make the content fill the entire page */
-  min-height: calc(100vh - 169px); 
+  min-height: calc(100vh - 169px);
 }
 .up-down-svg {
   position: relative;
@@ -102,9 +100,9 @@ body {
   text-transform: uppercase;
 }
 /* New game and Rules button */
-#new-game2{
+#new-game2 {
   position: absolute;
-  bottom : 50px;
+  bottom: 50px;
   margin-top: 20px;
 }
 
@@ -152,7 +150,7 @@ footer {
 
 /* rules modal */
 
-.rules-modal {
+.modal {
   background: none;
   top: 85px;
   align-items: center;
@@ -161,19 +159,19 @@ footer {
   max-width: 100%;
   width: 100%;
 }
-#rules-container {
+.modal-container {
   border-radius: 16px;
   border: 1px solid #000;
   background: #fff;
   margin: 15px 10px;
-  min-height: calc(100vh - 169px); 
+  min-height: calc(100vh - 169px);
 }
 
-#rules-container * {
+.modal-container * {
   text-align: center;
 }
 
-#rules-paragraph {
+.modal-paragraph {
   position: relative;
   text-align: center;
   font-size: 16px;
@@ -182,14 +180,14 @@ footer {
   line-height: 110%; /* 17.6px */
 }
 
-#exit-rules{
+.exit-btn {
   position: absolute;
   top: 26px;
   right: 20px;
   background: none;
 }
 
-#score-container{
+#score-container {
   position: absolute;
   top: 5px;
   width: 100%;
@@ -197,22 +195,22 @@ footer {
   align-items: center;
   justify-content: center;
 }
-#banked-pts{
+#banked-pts {
   margin-right: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.score{
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 110%; /* 26.4px */
-text-transform: uppercase;
+.score {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 26.4px */
+  text-transform: uppercase;
 }
 
-#game-btns{
+#game-btns {
   position: absolute;
   bottom: 18px;
   display: flex;
@@ -222,4 +220,10 @@ text-transform: uppercase;
   position: absolute;
   width: 100%;
   gap: 11px;
+}
+
+.winner-font {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 110%;
 }

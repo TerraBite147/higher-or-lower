@@ -1,14 +1,25 @@
-const modal = document.querySelector('#rules-modal')
-const openRules = document.querySelector('#rules');
-const closeRules = document.querySelector('#exit-rules');
+const rulesModal = document.querySelector("#rules-modal");
+if (rulesModal) {
+  const openRules = document.querySelector("#rules");
+  const closeRules = document.querySelector("#exit-rules");
+  openRules.addEventListener("click", () => {
+    rulesModal.showModal();
+  });
+  closeRules.addEventListener("click", () => {
+    rulesModal.close();
+  });
+}
 
-openRules.addEventListener('click', () => {
-    modal.showModal();
-})
-closeRules.addEventListener('click', () => {
-    modal.close();
-})
+const winnerModal = document.querySelector("#winner-modal");
+if (winnerModal) {
+  const openWinner = document.querySelector("#bank");
+  const closeWinner = document.querySelector("#exit-winner");
 
-
-
-
+  openWinner.addEventListener("click", () => {
+    winnerModal.showModal();
+    console.log("Banked clicked");
+  });
+  closeWinner.addEventListener("click", () => {
+    winnerModal.close();
+  });
+}
