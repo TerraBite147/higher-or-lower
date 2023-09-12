@@ -96,7 +96,10 @@ body {
 }
 /* New game and Rules button */
 #new-game2{
+  position: absolute;
+  bottom : 50px;
   margin-top: 20px;
+
 }
 
 #other-buttons {
