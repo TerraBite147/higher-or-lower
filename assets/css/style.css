@@ -99,7 +99,6 @@ body {
   position: absolute;
   bottom : 50px;
   margin-top: 20px;
-
 }
 
 #other-buttons {
@@ -127,6 +126,7 @@ footer {
 /* Footer Links Styles */
 #footer-links {
   display: flex;
+  gap: 10px;
 }
 #footer-links a {
   display: flex;
