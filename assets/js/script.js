@@ -26,7 +26,7 @@ if (winnerModal) {
 
 let cards = [];
 /**
- * Creates an ordered object array of 52 cards with value pairs name: and value: 
+ * Creates an ordered object array of 52 cards with value pairs name: and value:
  */
 function createDeck() {
   cards = [];
@@ -56,5 +56,29 @@ function createDeck() {
       cards.push(card);
     }
   }
-  console.log(cards)
+  console.log(cards);
 }
+
+const cardsContainer = document.getElementById("cards-container");
+const currentCard = document.getElementById("current-card");
+/**
+ * Displays a random card from the cards array in the card-container div
+ * @returns returns the value of the card drawn
+ */
+function drawCard() {
+  const randomIndex = Math.floor(Math.random() * cards.length);
+  const selectedCard = cards[randomIndex];
+
+  // Create the filename for the card image
+  const cardImageName = `${selectedCard.name}.svg`;
+
+  // Set the source of the current card element to display the selected card
+  currentCard.src = `assets/images/cards/SVG-cards-1.3/${cardImageName}`;
+  return selectedCard.value;
+}
+const higher = document.querySelector("#higher-btn");
+
+higher.addEventListener("click", () => {
+  createDeck();
+  console.log(drawCard());
+});
