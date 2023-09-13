@@ -56,7 +56,6 @@ function createDeck() {
       cards.push(card);
     }
   }
-  console.log(cards);
 }
 
 const cardsContainer = document.getElementById("cards-container");
