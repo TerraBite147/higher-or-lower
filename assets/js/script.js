@@ -61,11 +61,15 @@ function createDeck() {
 
 const cardsContainer = document.getElementById("cards-container");
 const currentCard = document.getElementById("current-card");
+let currentCardValue = null;
+let previousCardValue = null;
 /**
  * Displays a random card from the cards array in the card-container div
- * @returns returns the value of the card drawn
+ *
  */
 function drawCard() {
+
+  previousCardValue = currentCardValue;
   const randomIndex = Math.floor(Math.random() * cards.length);
   const selectedCard = cards[randomIndex];
 
@@ -74,11 +78,44 @@ function drawCard() {
 
   // Set the source of the current card element to display the selected card
   currentCard.src = `assets/images/cards/SVG-cards-1.3/${cardImageName}`;
-  return selectedCard.value;
+  currentCard.alt = `${cardImageName}`;
+  currentCard.setAttribute("aria-label", cardImageName);
+  currentCardValue = selectedCard.value;
 }
-const higher = document.querySelector("#higher-btn");
 
+// Find User's choice
+let userChoice = null;
+
+const higher = document.querySelector("#higher-btn");
 higher.addEventListener("click", () => {
   createDeck();
-  console.log(drawCard());
+  drawCard();
+  userChoice = "Higher";
+  compareUserChoice(userChoice)
 });
+
+const lower = document.querySelector("#lower-btn");
+lower.addEventListener("click", () => {
+  createDeck();
+  drawCard();
+  userChoice = "Lower";
+  compareUserChoice(userChoice)
+});
+
+// Compare choice
+
+function compareUserChoice(userChoice) {
+  if (userChoice === "Higher") {
+    if (currentCardValue >= previousCardValue) {
+      console.log("Correct");
+    } else {
+      console.log("Incorrect");
+    }
+  } else if (userChoice === "Lower") {
+    if (currentCardValue <= previousCardValue) {
+      console.log("Correct");
+    } else {
+      console.log("Incorrect");
+    }
+  }
+}
