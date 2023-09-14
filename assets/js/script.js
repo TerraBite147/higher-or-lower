@@ -1,3 +1,4 @@
+// Rules Modal open and close will only create event listeners if content is on page.
 const rulesModal = document.querySelector("#rules-modal");
 if (rulesModal) {
   const openRules = document.querySelector("#rules");
@@ -9,22 +10,29 @@ if (rulesModal) {
     rulesModal.close();
   });
 }
-
+// Winner Modal open and close will only create event listeners if content is on page.
 const winnerModal = document.querySelector("#winner-modal");
 if (winnerModal) {
-  const openWinner = document.querySelector("#bank");
   const closeWinner = document.querySelector("#exit-winner");
-
-  openWinner.addEventListener("click", () => {
-    winnerModal.showModal();
-    console.log("Banked clicked");
-  });
   closeWinner.addEventListener("click", () => {
     winnerModal.close();
   });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  if (cardsContainer) {
+    initializeGame();
+  }
+});
+
+function initializeGame() {
+  createDeck();
+  drawCard();
+}
+
+// Card array to hold all 52 cards
 let cards = [];
+
 /**
  * Creates an ordered object array of 52 cards with value pairs name: and value:
  */
@@ -58,16 +66,17 @@ function createDeck() {
   }
 }
 
+// Variables for
 const cardsContainer = document.getElementById("cards-container");
 const currentCard = document.getElementById("current-card");
 let currentCardValue = null;
 let previousCardValue = null;
+
 /**
  * Displays a random card from the cards array in the card-container div
  *
  */
 function drawCard() {
-
   previousCardValue = currentCardValue;
   const randomIndex = Math.floor(Math.random() * cards.length);
   const selectedCard = cards[randomIndex];
@@ -87,34 +96,72 @@ let userChoice = null;
 
 const higher = document.querySelector("#higher-btn");
 higher.addEventListener("click", () => {
-  createDeck();
   drawCard();
   userChoice = "Higher";
-  compareUserChoice(userChoice)
+  compareUserChoice(userChoice);
 });
 
 const lower = document.querySelector("#lower-btn");
 lower.addEventListener("click", () => {
-  createDeck();
   drawCard();
   userChoice = "Lower";
-  compareUserChoice(userChoice)
+  compareUserChoice(userChoice);
+});
+const bankButton= document.querySelector("#bank-btn");
+bankButton.addEventListener("click", () => {
+  bankPoints();
 });
 
 // Compare choice
+let bankedPointsElement = document.querySelector("#banked-pts");
+let streakPointsElement = document.querySelector("#streak-pts");
+let streakPoints = parseInt(streakPointsElement.innerHTML);
+let bankedPoints = parseInt(bankedPointsElement.innerHTML);
 
 function compareUserChoice(userChoice) {
   if (userChoice === "Higher") {
     if (currentCardValue >= previousCardValue) {
-      console.log("Correct");
+      if (streakPoints > 1) {
+        streakPoints += streakPoints;
+      } else {
+        streakPoints += 1;
+      }
+      streakPointsElement.innerHTML = streakPoints;
     } else {
-      console.log("Incorrect");
+      loseStreak();
     }
   } else if (userChoice === "Lower") {
     if (currentCardValue <= previousCardValue) {
-      console.log("Correct");
+      if (streakPoints > 1) {
+        streakPoints += streakPoints;
+      } else {
+        streakPoints += 1;
+      }
+      streakPointsElement.innerHTML = streakPoints;
     } else {
-      console.log("Incorrect");
+      loseStreak();
     }
   }
+}
+
+function loseStreak() {
+  streakPoints = 0;
+  streakPointsElement.innerHTML = 0;
+  createDeck();
+}
+
+function winCondition() {
+  let bankedPoints = parseInt(document.querySelector("#banked-pts").innerHTML);
+  if (bankedPoints >= 30) {
+    winnerModal.showModal();
+  }
+}
+
+function bankPoints() {
+  bankedPoints += streakPoints; // Add streak points to banked points
+  streakPoints = 0; // Reset streak to 0
+  streakPointsElement.innerHTML = streakPoints; // Update streak points display
+  bankedPointsElement.innerHTML = bankedPoints; // Update banked points display
+  initializeGame();
+  winCondition();
 }
