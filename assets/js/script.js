@@ -152,7 +152,7 @@ function loseStreak() {
 
 function winCondition() {
   let bankedPoints = parseInt(document.querySelector("#banked-pts").innerHTML);
-  if (bankedPoints >= 30) {
+  if (bankedPoints >= 50) {
     winnerModal.showModal();
   }
 }
