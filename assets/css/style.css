@@ -165,8 +165,8 @@ footer {
 
 .modal {
   background: none;
-  top: 85px;
   position: absolute;
+  top: 85px;
   max-width: 100%;
   width: 100%;
 }
