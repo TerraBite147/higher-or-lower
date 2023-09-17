@@ -9,14 +9,17 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <div class="header-logo">
             <a href="index.html"><h1><span class="red">HIGHER</span> OR LOWER</h1></a>
             <img src="assets/images/up-down-arrows-cropped.png" alt="Higher or Lower Logo">
         </div>
     </header>
+    <!-- Main -->
     <main>
         <div class="home maxWidth">
+            <!-- Top left higher or lower icon -->
             <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none"
                 class="up-down-svg" id="up-down-top-left">
                 <g clip-path="url(#clip0_24_11)">
@@ -30,16 +33,20 @@
                     </clipPath>
                 </defs>
             </svg>
+            <!-- Higher or Lower Title -->
             <div class="logo header-logo">
                 <h1><span class="red">HIGHER</span> OR LOWER</h1>
             </div>
+            <!-- Buttons to redirect to game page and open rules Modal -->
             <div id="control-buttons">
                 <button class="red buttons" id="new-game"><a href="game.html">New Game</a></button>
                 <button class="buttons" id="rules"> Rules</button>
             </div>
+            <!-- report issue button -->
             <div id="other-buttons">
                 <button class="buttons" id="issue">Report An Issue</button>
             </div>
+            <!-- Bottom right higher or lower icon -->
             <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none"
                 class="up-down-svg" id="up-down-bottom-right">
                 <g clip-path="url(#clip0_24_11)">
@@ -56,15 +63,17 @@
         </div>
     </main>
 
-
+<!-- Rules Modal -->
     <dialog class="modal" id="rules-modal">
         <div class="modal-container maxWidth">
             <h1><span class="red">HIGHER</span> OR LOWER</h1>
+            <!-- button used to close rules modal -->
             <button class="exit-btn" id="exit-rules"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M15 9L9 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M9 9L15 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg></button>
+            <!-- Title -->
             <h2>RULES</h2>
             <p class="modal-paragraph">The Objective of Higher or Lower is to guess whether the next card is <span
                     class="red">higher</span> or
@@ -76,6 +85,7 @@
                 Restart the game anytime to start fresh. <br> <br>
                 Enjoy testing your card-guessing skills and aiming for victory!
             </p>
+            <!-- Directs user to game.html -->
             <button class="red center buttons" id="new-game2"><a href="game.html">New Game</a></button>
         </div>
     </dialog>
@@ -83,7 +93,7 @@
 
 
     <footer class="footer">
-
+<!-- Social media links -->
         <div id="footer-links">
             <a href="https://github.com/TerraBite147/higher-or-lower" aria-label="Open link to Github Repo in new tab"
                 target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
@@ -129,6 +139,7 @@
                 </svg>
             </a>
         </div>
+        <!-- footer disclaimer -->
         <p id="footer-disclaimer">Higher or lower Copyright © || Designed By: Logan Carlow</p>
     </footer>
     <script src="./assets/js/script.js"></script>
