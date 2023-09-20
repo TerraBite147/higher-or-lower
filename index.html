@@ -12,7 +12,9 @@
     <!-- Header -->
     <header>
         <div class="header-logo">
-            <a href="index.html"><h1><span class="red">HIGHER</span> OR LOWER</h1></a>
+            <a href="index.html">
+                <h1><span class="red">HIGHER</span> OR LOWER</h1>
+            </a>
             <img src="assets/images/up-down-arrows-cropped.png" alt="Higher or Lower Logo">
         </div>
     </header>
@@ -44,7 +46,7 @@
             </div>
             <!-- report issue button -->
             <div id="other-buttons">
-                <button class="buttons" id="issue">Report An Issue</button>
+                <button class="buttons" id="report">Report An Issue</button>
             </div>
             <!-- Bottom right higher or lower icon -->
             <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none"
@@ -63,16 +65,21 @@
         </div>
     </main>
 
-<!-- Rules Modal -->
+    <!-- Rules Modal -->
     <dialog class="modal" id="rules-modal">
         <div class="modal-container maxWidth">
             <h1><span class="red">HIGHER</span> OR LOWER</h1>
             <!-- button used to close rules modal -->
-            <button class="exit-btn" id="exit-rules"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M15 9L9 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M9 9L15 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg></button>
+            <button class="exit-btn" id="exit-rules"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15 9L9 15" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M9 9L15 15" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg></button>
             <!-- Title -->
             <h2>RULES</h2>
             <p class="modal-paragraph">The Objective of Higher or Lower is to guess whether the next card is <span
@@ -90,10 +97,47 @@
         </div>
     </dialog>
 
+    <dialog class="modal" id="report-modal">
+        <div class="modal-container maxWidth" id="report-container">
+            <h1><span class="red">HIGHER</span> OR LOWER</h1>
+            <h2>Report An Issue</h2>
+            <p>Thank you for taking the time to report the issue. Please describe the issue in as much detail as
+                possible.</p>
+
+            <!-- button used to close rules modal -->
+            <button class="exit-btn" id="exit-report"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15 9L9 15" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M9 9L15 15" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg></button>
+
+            <form action="submit.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="issue">Issue Description:</label><br>
+                <textarea id="issue" name="issue"
+                    placeholder="Thank you for taking the time to report the issue. Please describe the issue in as much detail as possible."
+                    rows="5" cols="40" required></textarea><br><br>
+                <!-- Submit Button -->
+                
+            </form>
+            <button class="red center buttons" id="sumbit">SUBMIT</button>
+        </div>
+    </dialog>
+
 
 
     <footer class="footer">
-<!-- Social media links -->
+        <!-- Social media links -->
         <div id="footer-links">
             <a href="https://github.com/TerraBite147/higher-or-lower" aria-label="Open link to Github Repo in new tab"
                 target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
