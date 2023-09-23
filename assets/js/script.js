@@ -9,6 +9,8 @@ const bankButton = document.querySelector("#bank-btn");
 
 let bankedPointsElement = document.querySelector("#banked-pts");
 let streakPointsElement = document.querySelector("#streak-pts");
+let turnCounter = 0;
+
 
 let cards = [];
 let currentCardValue = null;
@@ -113,12 +115,14 @@ if (winnerModal) {
 
   const higher = document.querySelector("#higher-btn");
   higher.addEventListener("click", () => {
+    turnCounter += 1;
     drawCard();
     userChoice = "Higher";
     compareUserChoice(userChoice);
   });
 
   lower.addEventListener("click", () => {
+    turnCounter += 1;
     drawCard();
     userChoice = "Lower";
     compareUserChoice(userChoice);
@@ -164,9 +168,16 @@ if (winnerModal) {
     let bankedPoints = parseInt(
       document.querySelector("#banked-pts").innerHTML
     );
-    if (bankedPoints >= 50) {
+    if (bankedPoints >= 1) {
       winnerModal.showModal();
+      let pointsTotal = document.querySelector("#points-total");
+      pointsTotal.innerHTML = bankedPoints;
+      let turns = document.querySelector("#turns");
+      turns.innerHTML = turnCounter;
+      turnCounter = 0;
     }
+    
+
   }
 
   function bankPoints() {
