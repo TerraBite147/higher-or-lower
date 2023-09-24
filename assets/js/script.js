@@ -52,7 +52,7 @@ if (rulesModal) {
       thankYou.style.display = "block";
       setTimeout(() => {
         window.location.href = "index.html";
-      }, 3000);
+      }, 5000);
     } else {
       alert("Please fill in all fields");
     }
@@ -63,11 +63,18 @@ if (rulesModal) {
 if (winnerModal) {
   let streakPoints = parseInt(streakPointsElement.innerHTML);
   let bankedPoints = parseInt(bankedPointsElement.innerHTML);
+
+  //Close winner modal
   const closeWinner = document.querySelector("#exit-winner");
   closeWinner.addEventListener("click", () => {
+    // close modal
     winnerModal.close();
+    // start new game
     initializeGame();
+    // Reset points
+    document.querySelector("#banked-pts").innerHTML = 0;
   });
+  // if there is a cards-container element on the page, initialize the game
   if (cardsContainer) {
     initializeGame();
   }
@@ -128,7 +135,7 @@ if (winnerModal) {
     currentCard.setAttribute("aria-label", cardImageName);
     currentCardValue = selectedCard.value;
   }
-
+// Event listeners for the higher and lower buttons
   const higher = document.querySelector("#higher-btn");
   higher.addEventListener("click", () => {
     turnCounter += 1;
@@ -147,7 +154,11 @@ if (winnerModal) {
   bankButton.addEventListener("click", () => {
     bankPoints();
   });
-
+/**
+ * Compares the user's choice to the current and previous card values
+ * @param {string} userChoice - The user's choice of higher or lower
+ *  
+ */
   function compareUserChoice(userChoice) {
     if (userChoice === "Higher") {
       if (currentCardValue >= previousCardValue) {
@@ -173,13 +184,18 @@ if (winnerModal) {
       }
     }
   }
-
+  /**
+   * Resets the streak points to 0 and creates a new deck of cards
+   */
   function loseStreak() {
     streakPoints = 0;
     streakPointsElement.innerHTML = 0;
     createDeck();
   }
-
+/**
+ * Checks if the user has banked 1 point and displays the winner modal
+ * If the user has banked 1 point, the turn counter is reset to 0  
+ */
   function winCondition() {
     let bankedPoints = parseInt(
       document.querySelector("#banked-pts").innerHTML
@@ -193,7 +209,7 @@ if (winnerModal) {
       turnCounter = 0;
     }
   }
-
+// function to bank points
   function bankPoints() {
     bankedPoints += streakPoints; // Add streak points to banked points
     streakPoints = 0; // Reset streak to 0

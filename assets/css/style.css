@@ -270,6 +270,7 @@ textarea {
 }
 
 .exit-btn {
+  width: 24px;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -301,13 +302,12 @@ textarea {
 }
 
 #game-btns {
-  position: absolute;
+  position: relative;
   bottom: 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
   width: 100%;
   gap: 11px;
 }
@@ -322,15 +322,17 @@ textarea {
 }
 
 #cards-container {
+  position: relative;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: calc(100vh - 350px);
 }
 
 #cards-container img {
+  position: relative;
   height: 45vh;
-  margin-bottom: 100px;
 }
 
 /* Media Query for Tablet */
@@ -343,5 +345,21 @@ textarea {
   }
   .modal-container p{
     font-size: 28px;
+  }
+}
+
+/* Media Query for Desktop */ 
+@media only screen and (min-width: 1024px) {
+   .exit-btn{
+    width: 50px;
+  }
+  .modal-container h1{
+    font-size: 42px;
+  }
+  .modal-container h2{
+    font-size: 38px;
+  }
+  .modal-container p{
+    font-size: 30px;
   }
 }
