@@ -189,3 +189,6 @@ if (winnerModal) {
     winCondition();
   }
 }
+
+
+
