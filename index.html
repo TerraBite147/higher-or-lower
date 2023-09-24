@@ -113,14 +113,21 @@
                         stroke-linejoin="round" />
                 </svg></button>
 
-                <form id="report-form">
-                    <input class="" type="text" id="name" name="name" placeholder="Name" required>             
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                    <textarea id="issue" name="issue" placeholder="Thank you for taking the time to report the issue. Please describe the issue in as much detail as possible." rows="5" cols="40" required></textarea>
-                
-                    <!-- Submit Button -->
-                    <button class="red center buttons" id="submit-btn">SUBMIT</button>
-                </form>
+            <form id="report-form">
+                <input class="uppercase" type="text" id="name" name="name" placeholder="Name" required>
+                <input class="uppercase" type="email" id="email" name="email" placeholder="Email" required>
+                <textarea class="uppercase" id="issue" name="issue"
+                    placeholder="Thank you for taking the time to report the issue. Please describe the issue in as much detail as possible."
+                    rows="5" cols="40" required></textarea>
+
+                <!-- Submit Button -->
+                <button class="red center buttons" type="submit" id="submit-btn">SUBMIT</button>
+            </form>
+            <!-- Thank you message (initially hidden) -->
+            <div class="uppercase" id="thank-you-message">
+                <p>Thank you for your report!</p>
+            </div>
+
         </div>
     </dialog>
 

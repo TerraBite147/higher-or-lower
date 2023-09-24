@@ -11,7 +11,6 @@ let bankedPointsElement = document.querySelector("#banked-pts");
 let streakPointsElement = document.querySelector("#streak-pts");
 let turnCounter = 0;
 
-
 let cards = [];
 let currentCardValue = null;
 let previousCardValue = null;
@@ -29,7 +28,7 @@ if (rulesModal) {
   closeRules.addEventListener("click", () => {
     rulesModal.close();
   });
-// Open and Close report modal
+  // Open and Close report modal
   const openReport = document.querySelector("#report");
   const closeReport = document.querySelector("#exit-report");
   openReport.addEventListener("click", () => {
@@ -39,8 +38,25 @@ if (rulesModal) {
     reportModal.close();
   });
 
-
-
+  // Report form
+  const reportForm = document.querySelector("#report-form");
+  const submitBtn = document.querySelector("#submit-btn");
+  const thankYou = document.querySelector("#thank-you-message");
+  submitBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    if (
+      reportForm.querySelector("input[name='name']").value.trim() !== "" &&
+      reportForm.querySelector("input[name='email']").value.trim() !== "" &&
+      reportForm.querySelector("textarea[name='issue']").value.trim() !== ""
+    ) {
+      thankYou.style.display = "block";
+      setTimeout(() => {
+        window.location.href = "index.html";
+      }, 3000);
+    } else {
+      alert("Please fill in all fields");
+    }
+  });
 }
 
 // Run code for game.html
@@ -176,8 +192,6 @@ if (winnerModal) {
       turns.innerHTML = turnCounter;
       turnCounter = 0;
     }
-    
-
   }
 
   function bankPoints() {
@@ -189,6 +203,3 @@ if (winnerModal) {
     winCondition();
   }
 }
-
-
-
