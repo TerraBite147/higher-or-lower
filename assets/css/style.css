@@ -119,10 +119,10 @@ main {
 }
 /* New game and Rules button */
 #new-game2 {
-  position: absolute;
-  bottom: 50px;
-  margin-top: 20px;
+  position: relative;
+  margin: 20px 0px;
 }
+
 
 #other-buttons {
   display: flex;
@@ -193,11 +193,15 @@ footer {
 
 .modal-paragraph {
   position: relative;
+  max-width: 500px;
+  position: relative;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 110%; /* 17.6px */
+  margin: auto;
+  margin-top: 20px;
 }
 
 #report-container {
@@ -313,6 +317,9 @@ textarea {
   font-weight: 700;
   line-height: 110%;
 }
+#winner-title {
+  margin: 25px;
+}
 
 #cards-container {
   width: 100%;
@@ -324,4 +331,17 @@ textarea {
 #cards-container img {
   height: 45vh;
   margin-bottom: 100px;
+}
+
+/* Media Query for Tablet */
+@media only screen and (min-width: 768px) {
+  .modal-container h1{
+    font-size: 38px;
+  }
+  .modal-container h2{
+    font-size: 32px;
+  }
+  .modal-container p{
+    font-size: 28px;
+  }
 }
