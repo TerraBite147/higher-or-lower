@@ -119,8 +119,9 @@ main {
 }
 /* New game and Rules button */
 #new-game2 {
-  position: relative;
+  position: absolute;
   margin: 20px 0px;
+  bottom: 15px;
 }
 
 
@@ -335,16 +336,22 @@ textarea {
   height: 45vh;
 }
 
+@media only screen and (min-width: 425px) {
+  #control-buttons{
+    top: 220px;
+  }
+}
+
 /* Media Query for Tablet */
 @media only screen and (min-width: 768px) {
   .modal-container h1{
-    font-size: 38px;
+    font-size: 36px;
   }
   .modal-container h2{
-    font-size: 32px;
+    font-size: 30px;
   }
   .modal-container p{
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 
@@ -354,12 +361,9 @@ textarea {
     width: 50px;
   }
   .modal-container h1{
-    font-size: 42px;
+    font-size: 40px;
   }
   .modal-container h2{
-    font-size: 38px;
-  }
-  .modal-container p{
-    font-size: 30px;
+    font-size: 32px;
   }
 }
