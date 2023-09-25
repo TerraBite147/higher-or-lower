@@ -5,20 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Higher or Lower Card Game">
+    <meta name="keywords" content="Higher or Lower, Cards, Card, Card Game">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Higher or Lower</title>
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <div class="header-logo">
-            <a href="index.html">
+            <a href="index.html" aria-label="link to the Higher or Lower home page."
                 <h1><span class="red">HIGHER</span> OR LOWER</h1>
             </a>
             <img src="assets/images/up-down-arrows-cropped.png" alt="Higher or Lower Logo">
         </div>
     </header>
+    <!-- Main Content -->
     <main>
+        <!-- Game Section -->
         <div class="home maxWidth">
             <!-- SVG ICON -->
             <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none"
@@ -34,6 +39,7 @@
                     </clipPath>
                 </defs>
             </svg>
+            <!-- Game Container -->
             <div id="score-container">
                 <span id="banked" class="red score">Banked: </span><span id="banked-pts" class="score">0</span>
 
@@ -50,7 +56,6 @@
                     <button class="red buttons" id="higher-btn">Higher</button>
                     <button class="buttons" id="lower-btn">Lower</button>
                 </div>
-
                 <div id="btn-row-2">
                     <button class="buttons" id="bank-btn">Bank</button>
                 </div>
@@ -74,6 +79,7 @@
     <!-- Winner Modal to display the winning screen -->
     <dialog class="modal" id="winner-modal">
         <div class="modal-container maxWidth">
+            <!-- Title -->
             <h1><span class="red">HIGHER</span> OR LOWER</h1>
             <button class="exit-btn" id="exit-winner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                     fill="none">
@@ -85,6 +91,7 @@
                     <path d="M9 9L15 15" stroke="black" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
                 </svg></button>
+            <!-- Winner Title -->
             <h2 id="winner-title">WINNER</h2>
             <h2 class="red">Congratulations</h2>
             <p class="winner-font">
@@ -99,10 +106,10 @@
 
         </div>
     </dialog>
-
+<!-- Footer -->
     <footer class="footer">
-
         <div id="footer-links">
+            <!--Github -->
             <a href="https://github.com/TerraBite147/higher-or-lower" aria-label="Open link to Github Repo in new tab"
                 target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
                     fill="none" class="footer-links-svg">
@@ -110,6 +117,7 @@
                         d="M17.3538 0C7.7576 0 0 7.97759 0 17.847C0 25.7361 4.97056 32.4141 11.866 34.7776C12.7282 34.9553 13.0439 34.3936 13.0439 33.9211C13.0439 33.5073 13.0155 32.0891 13.0155 30.6115C8.18812 31.6754 7.18285 28.484 7.18285 28.484C6.40706 26.4156 5.25757 25.884 5.25757 25.884C3.67757 24.7907 5.37266 24.7907 5.37266 24.7907C7.12531 24.9089 8.04497 26.6227 8.04497 26.6227C9.5962 29.3409 12.0959 28.5728 13.1015 28.1C13.245 26.9476 13.705 26.1498 14.1934 25.7067C10.3432 25.293 6.29232 23.7565 6.29232 16.9013C6.29232 14.9511 6.98145 13.3556 8.07338 12.1147C7.9011 11.6716 7.29759 9.83927 8.24602 7.38689C8.24602 7.38689 9.71129 6.91404 13.0152 9.21883C14.4297 8.82817 15.8884 8.62944 17.3538 8.62777C18.8191 8.62777 20.3128 8.83482 21.6921 9.21883C24.9963 6.91404 26.4616 7.38689 26.4616 7.38689C27.41 9.83927 26.8061 11.6716 26.6339 12.1147C27.7546 13.3556 28.4153 14.9511 28.4153 16.9013C28.4153 23.7565 24.3644 25.2632 20.4854 25.7067C21.1177 26.268 21.6633 27.3316 21.6633 29.016C21.6633 31.4092 21.6349 33.33 21.6349 33.9207C21.6349 34.3936 21.951 34.9553 22.8128 34.778C29.7083 32.4137 34.6788 25.7361 34.6788 17.847C34.7072 7.97759 26.9212 0 17.3538 0Z"
                         fill="#E73539" />
                 </svg></a>
+                <!-- Linkedin -->
             <a href="https://www.linkedin.com/" aria-label="Open link to Linkedin in new tab" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none"
                     class="footer-links-svg">
@@ -125,6 +133,7 @@
                     </defs>
                 </svg>
             </a>
+            <!-- Instagram -->
             <a href="https://www.instagram.com" aria-label="Open link to instagram in new tab" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none"
                     class="footer-links-svg">
@@ -147,9 +156,9 @@
                 </svg>
             </a>
         </div>
+        <!-- footer disclaimer -->
         <p id="footer-disclaimer">Higher or lower Copyright © || Designed By: Logan Carlow</p>
     </footer>
     <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
