@@ -2,6 +2,7 @@
 const bankedPointsElement = document.querySelector("#banked-pts");
 const streakPointsElement = document.querySelector("#streak-pts");
 let turnCounter = 0;
+let streakPoints = 0;
 let cards = [];
 let currentCardValue = null;
 let previousCardValue = null;
@@ -254,6 +255,8 @@ function bankPoints() {
   winCondition();
 }
 
+
+// *******************TESTING********************** 
 /**
  * Checks the height of the screen and hides every second <br> tag if the screen is too small
  */
