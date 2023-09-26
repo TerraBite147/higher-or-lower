@@ -228,12 +228,12 @@ function loseStreak() {
   createDeck();
 }
 /**
- * Checks if the user has banked 1 point and displays the winner modal
- * If the user has banked 1 point, the turn counter is reset to 0
+ * Checks if the user has banked 50 point and displays the winner modal
+ * If the user has banked 50 point, the turn counter is reset to 0
  */
 function winCondition() {
   let bankedPoints = parseInt(document.querySelector("#banked-pts").innerHTML);
-  if (bankedPoints >= 1) {
+  if (bankedPoints >= 50) {
     winnerModal.showModal();
     let pointsTotal = document.querySelector("#points-total");
     pointsTotal.innerHTML = bankedPoints;
