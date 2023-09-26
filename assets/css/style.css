@@ -371,3 +371,32 @@ textarea {
     font-size: 32px;
   }
 }
+
+/* Media Query for small screen height */
+@media only screen and (max-height: 620px) {
+  .buttons{
+    width: 100px;
+    height: 28px;
+    font-size: 20px;
+  }
+  #cards-container{
+    top: -20px;
+  }
+  #cards-container img{
+    top: -10px;
+    height: 35vh;
+  }
+  #report{
+    font-size: 14px;
+  }
+  .modal-container h1{
+    font-size: 20px;
+  }
+  .modal-container h2{
+    font-size: 18px;
+  }
+  .modal-container p{
+    margin-top: 0;
+    font-size: 16px;
+  }
+}

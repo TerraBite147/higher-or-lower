@@ -253,3 +253,27 @@ function bankPoints() {
   initializeGame();
   winCondition();
 }
+
+/**
+ * Checks the height of the screen and hides every second <br> tag if the screen is too small
+ */
+function checkScreenHeight() {
+  var breaks = document.querySelectorAll('.modal-paragraph br');
+  if (window.innerHeight <= 620) {
+    for (var i = 0; i < breaks.length; i++) {
+      if ((i + 1) % 2 === 0) {
+        breaks[i].style.display = 'none';
+      }
+    }
+  } else {
+    for (var i = 0; i < breaks.length; i++) {
+      breaks[i].style.display = '';
+    }
+  }
+}
+
+// Run the function when the document is ready
+document.addEventListener('DOMContentLoaded', checkScreenHeight);
+
+// Run the function whenever the window is resized
+window.addEventListener('resize', checkScreenHeight);
