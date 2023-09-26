@@ -1,6 +1,4 @@
 // Global Variables
-const bankedPointsElement = document.querySelector("#banked-pts");
-const streakPointsElement = document.querySelector("#streak-pts");
 let turnCounter = 0;
 let streakPoints = 0;
 let cards = [];
@@ -11,7 +9,7 @@ let userChoice = null;
 // Modals
 const rulesModal = document.querySelector("#rules-modal");
 const winnerModal = document.querySelector("#winner-modal");
-const reportModal = document.querySelector("#report-modal");
+
 
 // Elements
 const cardsContainer = document.getElementById("cards-container");
@@ -50,6 +48,7 @@ function setupRulesModal() {
  * Sets up the report modal and handles the button click events
  */
 function setupReportModal() {
+  const reportModal = document.querySelector("#report-modal");
   const openReport = document.querySelector("#report");
   const closeReport = document.querySelector("#exit-report");
   openReport.addEventListener("click", () => reportModal.showModal());
@@ -195,6 +194,7 @@ function drawCard() {
  *
  */
 function compareUserChoice(userChoice) {
+  const streakPointsElement = document.querySelector("#streak-pts");
   if (userChoice === "Higher") {
     if (currentCardValue >= previousCardValue) {
       if (streakPoints > 1) {
@@ -223,6 +223,7 @@ function compareUserChoice(userChoice) {
  * Resets the streak points to 0 and creates a new deck of cards
  */
 function loseStreak() {
+  const streakPointsElement = document.querySelector("#streak-pts");
   streakPoints = 0;
   streakPointsElement.innerHTML = 0;
   createDeck();
@@ -233,7 +234,7 @@ function loseStreak() {
  */
 function winCondition() {
   let bankedPoints = parseInt(document.querySelector("#banked-pts").innerHTML);
-  if (bankedPoints >= 50) {
+  if (bankedPoints >= 8) {
     winnerModal.showModal();
     let pointsTotal = document.querySelector("#points-total");
     pointsTotal.innerHTML = bankedPoints;
@@ -246,6 +247,7 @@ function winCondition() {
  * Adds the streak points to the banked points and resets the streak points to 0
  */
 function bankPoints() {
+  const bankedPointsElement = document.querySelector("#banked-pts");
   let bankedPoints = parseInt(bankedPointsElement.innerHTML);
   bankedPoints += streakPoints;
   streakPoints = 0;

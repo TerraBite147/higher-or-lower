@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Higher or Lower Card Game">
-        <meta name="keywords" content="Higher or Lower, Cards, Card, Card Game">
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <title>Higher or Lower</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Higher or Lower Card Game">
+    <meta name="keywords" content="Higher or Lower, Cards, Card, Card Game">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Higher or Lower</title>
+</head>
 
 <body>
     <!-- Header -->
     <header>
         <div class="header-logo">
             <a href="index.html">
-            <h1><span class="red">HIGHER</span> OR LOWER</h1>
+                <h1><span class="red">HIGHER</span> OR LOWER</h1>
             </a>
             <a href="index.html">
                 <img src="assets/images/up-down-arrows-cropped.png" alt="Higher or Lower Logo">
             </a>
-            </div>
+        </div>
     </header>
     <!-- Main -->
     <main>
@@ -75,8 +76,8 @@
         <div class="modal-container maxWidth">
             <h1><span class="red">HIGHER</span> OR LOWER</h1>
             <!-- button used to close rules modal -->
-            <button class="exit-btn" id="exit-rules"><svg xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24" fill="none">
+            <button class="exit-btn" id="exit-rules"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    fill="none">
                     <path
                         d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
                         stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -119,12 +120,17 @@
                 </svg></button>
             <!-- form to report issue -->
             <form id="report-form">
+                <!-- Name Label and Input -->
+                <label for="name" class="uppercase">Name:</label>
                 <input class="uppercase" type="text" id="name" name="name" placeholder="Name" required>
+                <!-- Email Label and Input -->
+                <label for="email" class="uppercase">Email:</label>
                 <input class="uppercase" type="email" id="email" name="email" placeholder="Email" required>
+                <!-- Issue Label and Textarea -->
+                <label for="issue" class="uppercase">Issue:</label>
                 <textarea class="uppercase" id="issue" name="issue"
                     placeholder="Thank you for taking the time to report the issue. Please describe the issue in as much detail as possible."
                     rows="5" cols="40" required></textarea>
-
                 <!-- Submit Button -->
                 <button class="red center buttons" type="submit" id="submit-btn">SUBMIT</button>
             </form>

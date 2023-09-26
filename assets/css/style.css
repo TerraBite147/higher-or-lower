@@ -136,6 +136,9 @@ main {
   font-size: 16px;
   bottom: 40px;
 }
+#report-form label{
+  display: none;
+}
 
 /* issue text area */
 #issue{
