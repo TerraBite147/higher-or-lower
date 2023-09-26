@@ -52,7 +52,7 @@ a {
   height: 50px;
 }
 
-.header-logo h1 {
+.header-logo h1{
   height: 36px;
   font-size: 40px;
   font-style: normal;
@@ -137,6 +137,10 @@ main {
   bottom: 40px;
 }
 
+/* issue text area */
+#issue{
+  max-width: 450px;
+}
 /* Footer Style */
 footer {
   display: flex;
@@ -303,7 +307,7 @@ textarea {
 }
 
 #game-btns {
-  position: relative;
+  position: absolute;
   bottom: 18px;
   display: flex;
   flex-direction: column;
