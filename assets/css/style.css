@@ -41,7 +41,7 @@ a {
   left: 50%;
   transform: translate(-50%);
 }
-
+/* Header and Title Style */
 .header-logo {
   display: flex;
   flex-direction: column;
@@ -71,7 +71,7 @@ a {
 .logo-small {
   width: 64px;
 }
-
+/* Main content styles */
 main {
   display: flex;
   justify-content: center;
@@ -87,6 +87,8 @@ main {
   /* Below added to make the content fill the entire page */
   min-height: calc(100vh - 169px);
 }
+
+/* SVG Style */
 .up-down-svg {
   position: relative;
   margin: 5px;
@@ -123,7 +125,6 @@ main {
   margin: 20px 0px;
   bottom: 15px;
 }
-
 
 #other-buttons {
   display: flex;
@@ -175,7 +176,6 @@ footer {
 }
 
 /* rules modal */
-
 .modal {
   background: none;
   position: absolute;
@@ -211,7 +211,7 @@ footer {
   margin: auto;
   margin-top: 20px;
 }
-
+/* Report an issue form Styles */
 #report-container {
   border-radius: 16px;
   border: 1px solid #000;
@@ -251,7 +251,7 @@ textarea {
 #submit-btn {
   text-align: center;
 }
-
+/* Thank you popup for Form */
 #thank-you-message {
   display: none;
   position: fixed;
@@ -263,7 +263,7 @@ textarea {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
 }
-#thank-you-message p {
+#thank-you-message h2 {
   background-color: white;
   text-align: center;
   padding: 20px;
@@ -276,7 +276,7 @@ textarea {
   font-size: 20px;
 
 }
-
+/* Exit button to close Modals */
 .exit-btn {
   width: 24px;
   position: absolute;
@@ -284,7 +284,7 @@ textarea {
   right: 10px;
   background: none;
 }
-
+/* Score points container */
 #score-container {
   position: absolute;
   top: 5px;
@@ -308,7 +308,7 @@ textarea {
   line-height: 110%; /* 26.4px */
   text-transform: uppercase;
 }
-
+/* Buttons for main game */
 #game-btns {
   position: absolute;
   bottom: 18px;
@@ -319,7 +319,7 @@ textarea {
   width: 100%;
   gap: 11px;
 }
-
+/* winner modal message style */
 .winner-font {
   font-size: 24px;
   font-weight: 700;
@@ -328,7 +328,7 @@ textarea {
 #winner-title {
   margin: 25px;
 }
-
+/* Main Game area container */
 #cards-container {
   position: relative;
   width: 100%;
@@ -343,6 +343,7 @@ textarea {
   height: 45vh;
 }
 
+/* Media Query for mobile */
 @media only screen and (min-width: 425px) {
   #control-buttons{
     top: 220px;

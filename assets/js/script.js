@@ -247,6 +247,7 @@ function winCondition() {
  * Adds the streak points to the banked points and resets the streak points to 0
  */
 function bankPoints() {
+  const streakPointsElement = document.querySelector("#streak-pts");
   const bankedPointsElement = document.querySelector("#banked-pts");
   let bankedPoints = parseInt(bankedPointsElement.innerHTML);
   bankedPoints += streakPoints;
@@ -257,13 +258,11 @@ function bankPoints() {
   winCondition();
 }
 
-
-// *******************TESTING********************** 
 /**
  * Checks the height of the screen and hides every second <br> tag if the screen is too small
  */
 function checkScreenHeight() {
-  var breaks = document.querySelectorAll('.modal-paragraph br');
+  let breaks = document.querySelectorAll('.modal-paragraph br');
   if (window.innerHeight <= 620) {
     for (var i = 0; i < breaks.length; i++) {
       if ((i + 1) % 2 === 0) {
