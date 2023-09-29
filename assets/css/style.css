@@ -361,10 +361,19 @@ textarea {
 }
 
 /* Media Query for mobile */
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 375px) {
   #control-buttons{
     top: 220px;
   }
+  .buttons{
+    width: 140px;
+    height: 34px;
+    font-size: 30px;
+  }
+  .modal-paragraph{
+    font-size: 20px;
+  }
+
 }
 
 /* Media Query for Tablet */
