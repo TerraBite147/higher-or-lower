@@ -163,7 +163,7 @@ function createDeck() {
   for (const suit of suits) {
     for (const value of values) {
       const card = {
-        name: `${value}_of_${suit}`,
+        name: `${value}-of-${suit}`,
         value: values.indexOf(value) + 1, // Assign values from 1 to 13
       };
       cards.push(card);
@@ -184,8 +184,8 @@ function drawCard() {
 
   // Set the source of the current card element to display the selected card
   currentCard.src = `assets/images/cards/SVG-cards-1.3/${cardImageName}`;
-  currentCard.alt = `${cardImageName}`;
-  currentCard.setAttribute("aria-label", cardImageName);
+  currentCard.alt = `${selectedCard.name}`;
+  currentCard.setAttribute("aria-label", selectedCard.name);
   currentCardValue = selectedCard.value;
 }
 /**
