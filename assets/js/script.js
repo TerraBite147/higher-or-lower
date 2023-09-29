@@ -10,7 +10,6 @@ let userChoice = null;
 const rulesModal = document.querySelector("#rules-modal");
 const winnerModal = document.querySelector("#winner-modal");
 
-
 // Elements
 const cardsContainer = document.getElementById("cards-container");
 const currentCard = document.getElementById("current-card");
@@ -74,18 +73,34 @@ function setupReportForm() {
  * @param {HTMLFormElement} reportForm - The report form
  * @param {HTMLElement} thankYou - The thank you message
  */
-function handleReportFormSubmit(reportForm, thankYou) {
+ function handleReportFormSubmit(reportForm, thankYou) {
   return (event) => {
-    event.preventDefault();
+    event.preventDefault(); // prevent form submission
+    // Regular expression for basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     // Check if all fields are filled in
-    if (reportForm.querySelector("input[name='name']").value.trim() !== "" &&
-        reportForm.querySelector("input[name='email']").value.trim() !== "" &&
-        reportForm.querySelector("textarea[name='issue']").value.trim() !== "") 
-      {
-      thankYou.style.display = "block";
-      setTimeout(() => (window.location.href = "index.html"), 5000);
+    const name = reportForm.querySelector("input[name='name']").value.trim();
+    const email = reportForm.querySelector("input[name='email']").value.trim();
+    const issue = reportForm.querySelector("textarea[name='issue']").value.trim();
+
+    const popup = document.getElementById('popup-message');
+    const popupText = document.getElementById('popup-text');
+
+    if (name !== "" && email !== "" && issue !== "") {
+      // Validate email
+      if (emailRegex.test(email)) {
+        thankYou.style.display = "block";
+        setTimeout(() => (window.location.href = "index.html"), 5000);
+      } else {
+        popupText.innerText = "Please enter a valid email address.";
+        popup.style.display = 'block';
+        setTimeout(() => (popup.style.display = 'none'), 3000);
+      }
     } else {
-      alert("Please fill in all fields");
+      popupText.innerText = "Please fill in all fields";
+      popup.style.display = 'block';
+      setTimeout(() => (popup.style.display = 'none'), 3000);
     }
   };
 }
@@ -262,22 +277,22 @@ function bankPoints() {
  * Checks the height of the screen and hides every second <br> tag if the screen is too small
  */
 function checkScreenHeight() {
-  let breaks = document.querySelectorAll('.modal-paragraph br');
+  let breaks = document.querySelectorAll(".modal-paragraph br");
   if (window.innerHeight <= 620) {
     for (var i = 0; i < breaks.length; i++) {
       if ((i + 1) % 2 === 0) {
-        breaks[i].style.display = 'none';
+        breaks[i].style.display = "none";
       }
     }
   } else {
     for (var i = 0; i < breaks.length; i++) {
-      breaks[i].style.display = '';
+      breaks[i].style.display = "";
     }
   }
 }
 
 // Run the function when the document is ready
-document.addEventListener('DOMContentLoaded', checkScreenHeight);
+document.addEventListener("DOMContentLoaded", checkScreenHeight);
 
 // Run the function whenever the window is resized
-window.addEventListener('resize', checkScreenHeight);
+window.addEventListener("resize", checkScreenHeight);
