@@ -5,6 +5,8 @@
 
 This interactive web-based game challenges players to test their intuition and card-guessing skills. The objective is straightforward: accumulate 50 points by correctly guessing whether the next card will be higher or lower in value than the current card. The game features scoring, point banking, and a winner's page, making it an engaging and enjoyable experience for players of all ages. Have fun and see if you can reach the goal of 50 points!
 
+Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
+
 ![AmIResponsive Mockup](/README/Images/am-i-responsive.jpg)
 
 ## Features 
@@ -67,7 +69,7 @@ This interactive web-based game challenges players to test their intuition and c
   - This page will allow the user to send any issues they may have come across while playing the game.
   - The page includes a field for the user's name and email address and text box to describe the issue.
 
-![Report an issue](image.png)
+![Report an issue](/README/Images/report-an-issue.png)
 
 ### Features Left to Implement
 
