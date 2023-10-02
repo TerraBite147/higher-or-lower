@@ -1,7 +1,7 @@
-# Higher Or Lower
+# __Higher Or Lower__
 ![Higher or Lower logo ](/README/Images/logo.png)
 
-## Welcome to the Higher or Lower! 
+## __Welcome to the Higher or Lower!__ 
 
 This interactive web-based game challenges players to test their intuition and card-guessing skills. The objective is straightforward: accumulate 50 points by correctly guessing whether the next card will be higher or lower in value than the current card. The game features scoring, point banking, and a winner's page, making it an engaging and enjoyable experience for players of all ages. Have fun and see if you can reach the goal of 50 points!
 
@@ -9,9 +9,35 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
 
 ![AmIResponsive Mockup](/README/Images/am-i-responsive.jpg)
 
-## Features 
 
-### Existing Features
+## __Contents__
+- [__Higher Or Lower__](#higher-or-lower)
+  - [__Welcome to the Higher or Lower!__](#welcome-to-the-higher-or-lower)
+  - [__Contents__](#contents)
+  - [__Features__](#features)
+    - [__Existing Features__](#existing-features)
+    - [__Features Left to Implement__](#features-left-to-implement)
+  - [__User Experience (UX)__](#user-experience-ux)
+  - [__Testing__](#testing)
+    - [__Validator Testing__](#validator-testing)
+    - [__Performance Testing__](#performance-testing)
+    - [__Feature Testing__](#feature-testing)
+  - [__Technologies Used__](#technologies-used)
+    - [__Languages Used__](#languages-used)
+    - [__Frameworks, Libraries \& Programs Used__](#frameworks-libraries--programs-used)
+  - [__Deployment__](#deployment)
+    - [**GitHub Pages**](#github-pages)
+    - [**Forking the GitHub Repository**](#forking-the-github-repository)
+    - [**Making a Local Clone**](#making-a-local-clone)
+  - [__Credits__](#credits)
+    - [__Content__](#content)
+    - [__Media__](#media)
+
+
+
+## __Features__ 
+
+### __Existing Features__
 
 - __Navigation Bar__
 
@@ -71,7 +97,7 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
 
 ![Report an issue](/README/Images/report-an-issue.png)
 
-### Features Left to Implement
+### __Features Left to Implement__
 
 - A username to record previous scores.
 - A leader board to compare the user's personal best with other users'
@@ -79,7 +105,7 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
 
 ## __User Experience (UX)__
 
--   ### ***User stories***
+-   ### **User stories**
 
     -   #### First Time Visitor Goals
 
@@ -135,10 +161,10 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
   -   Mobile Winner Page Wireframe 
   ![View](README/Wireframes/mobile-winner-page.png)   
 
-## Testing 
+## __Testing__
 
 
-### Validator Testing 
+### __Validator Testing__ 
 
 - HTML
   - [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
@@ -158,7 +184,7 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
     - game.html : 0 Errors, 0 Contrast Errors, 2 Alerts, 3 Features, 7 Structural Elements, 11 ARIA
       - The 2 Alerts are caused by having redundant links in the home button directing to index.html and new game button to load the game.html.
 
-### Performance Testing
+### __Performance Testing__
 Chrome DevTools Lighthouse was used to test Performance, Accessibility, Best Practices and SEO. All tests performed in the 90-100 green score
 
 Desktop
@@ -170,7 +196,7 @@ Mobile
 - [game.html](README/light-house-results/mobile-game.pdf) : Performance 99, Accessibility 100, Best Practices 100, SEO 100
 
 
-### Feature Testing
+### __Feature Testing__
 
 **TEST** | **ACTION** | **EXPECTATION** | **RESULT** 
 ----------|----------|----------|----------
@@ -216,7 +242,7 @@ game.html winner modal responsiveness width 1440px  | Resize window to 1440px | 
 
 ## __Technologies Used__
 
-### ***Languages Used***
+### __Languages Used__
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 
@@ -224,7 +250,7 @@ game.html winner modal responsiveness width 1440px  | Resize window to 1440px | 
 
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-### ***Frameworks, Libraries & Programs Used***
+### __Frameworks, Libraries & Programs Used__
 
 1. [Google Fonts:](https://fonts.google.com/)
     - Google Fonts was used to import the Saira Condensed font into the style.css file which is used on all pages throughout the project.
@@ -246,7 +272,7 @@ game.html winner modal responsiveness width 1440px  | Resize window to 1440px | 
 
 ## __Deployment__
 
-### ***GitHub Pages***
+### **GitHub Pages**
 
 The project was deployed to GitHub Pages using the following steps:
 
@@ -257,7 +283,7 @@ The project was deployed to GitHub Pages using the following steps:
 5. The page will automatically refresh.
 6. Scroll back down through the page to locate the now published site [link](https://terrabite147.github.io/higher-or-lower/) in the "GitHub Pages" section.
 
-### ***Forking the GitHub Repository***
+### **Forking the GitHub Repository**
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
 
@@ -265,7 +291,7 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
-### ***Making a Local Clone***
+### **Making a Local Clone**
 
 1. Log in to GitHub and locate the [Higher or Lower GitHub Repository](https://github.com/TerraBite147/higher-or-lower)
 2. Under the repository name, click "Clone or download".
@@ -291,17 +317,17 @@ $ git clone https://github.com/TerraBite147/higher-or-lower
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
-## Credits 
+## __Credits__ 
 
 
-### Content 
+### __Content__ 
 
 - Kevin Powell's youtube tutorial on dialog https://youtu.be/TAB_v6yBXIE?si=yBL_Eyxm_FZwzFfG
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 - Code Institute Readme template was used as a template for this readme [Code Institute](https://github.com/Code-Institute-Org/ci-full-template)
 - - PiaNotes Readme layout was used as a template for deployment process [PiaNotes](https://github.com/AlexaH88/pianotes/blob/main/README.md)
 
-### Media
+### __Media__
 
 - [Logo](https://www.vecteezy.com/vector-art/8552552-up-down-arrows-icon-inside-the-circle-upward-downward-business-logo-two-way-arrow-symbol-vector-for-your-website-design-logo-app-ui-illustration-eps-10)
 - [Cards](https://code.google.com/archive/p/vector-playing-cards/downloads)
