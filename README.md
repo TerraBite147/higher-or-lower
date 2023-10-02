@@ -18,6 +18,11 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
     - [__Existing Features__](#existing-features)
     - [__Features Left to Implement__](#features-left-to-implement)
   - [__User Experience (UX)__](#user-experience-ux)
+  - [__Design__](#design)
+    - [__Colour Scheme__](#colour-scheme)
+    - [__Typography__](#typography)
+    - [__Imagery__](#imagery)
+    - [__Wireframes__](#wireframes)
   - [__Testing__](#testing)
     - [__Validator Testing__](#validator-testing)
     - [__Performance Testing__](#performance-testing)
@@ -122,8 +127,8 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
   
         - As a Frequent User, I want to try and beat my personal best score on the challenge.
 
-  -   ### ***Design***
-  -   #### Colour Scheme
+-   ## __Design__
+  -   ### Colour Scheme
       -   The three main colours used are black white and Red.
           -   Red
               -   ![#d62424](https://placehold.it/150x40/d62424/FFFFFF?text=000000) was used for the buttons and the logo.
@@ -137,29 +142,29 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
           -   Simple and easy to read.
           -   Recognizable and memorable.
       -   This colour scheme was used to keep the site simple and easy to use.
-  -   #### Typography
+  -   ### Typography
   -   The [Saira Condensed](https://fonts.google.com/specimen/Saira+Condensed?query=saira) font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Saira Condensed is a clean font used frequently in programming, so it is both attractive and appropriate.
-  -   #### Imagery
+  -   ### Imagery
   -   The card images used are designed to be simple and easily recognizable to the user.
   -   The higher or lower logo is a simple design that is easily recognizable and memorable.
-  -   #### Wireframes
+  -   ### Wireframes
   -   Figma was used to create the wireframes during the design process.      
   -   Desktop Home Page Wireframe 
-  ![View](README/Wireframes/home-page.png)
+  ![View](/README/wireframes/home-page.png)
   -   Desktop Rules Page Wireframe 
-  ![View](README/Wireframes/rules-page.png)
+  ![View](/README/wireframes/rules-page.png)
   -   Desktop Game Page Wireframe 
-  ![View](README/Wireframes/game-page.png)
+  ![View](/README/wireframes/game-page.png)
   -   Desktop Winner Page Wireframe 
-  ![View](README/Wireframes/winner-page.png)
+  ![View](/README/wireframes/winner-page.png)
   -   Mobile Home Page Wireframe 
-  ![View](README/Wireframes/mobile-home-page.png)
+  ![View](/README/wireframes/mobile-home-page.png)
   -   Mobile Rules Page Wireframe 
-  ![View](README/Wireframes/mobile-rules-page.png)
+  ![View](/README/wireframes/mobile-rules-page.png)
   -   Mobile Game Page Wireframe 
-  ![View](README/Wireframes/mobile-game-page.png)
+  ![View](/README/wireframes/mobile-game-page.png)
   -   Mobile Winner Page Wireframe 
-  ![View](README/Wireframes/mobile-winner-page.png)   
+  ![View](/README/wireframes/mobile-winner-page.png)   
 
 ## __Testing__
 
