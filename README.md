@@ -21,7 +21,7 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
 
 - __The landing page image__
 
-  - The landing includes the logo and options that allow the user to start the game, check the rules and report and issue. 
+  - The landing includes the Title and options that allow the user to start the game, check the rules and report and issue. 
   - This section introduces the user to Higher or Lower with a simple and clear design.
 
 ![home Page](/README/Images/home.png)
@@ -75,6 +75,7 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
 
 - A username to record previous scores.
 - A leader board to compare the user's personal best with other users'
+- 404 Page for when the user enters an invalid URL.
 
 ## __User Experience (UX)__
 
@@ -106,6 +107,9 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
               -   ![#000000](https://placehold.it/150x40/000000/FFFFFF?text=000000) was used for the text and footer
   
       -   The colours were inspired by a [deck of cards](https://en.wikipedia.org/wiki/Playing_card#/media/File:AcetoFive.JPG).
+          -   The colours are unmistakably associated with cards and the game of cards.
+          -   Simple and easy to read.
+          -   Recognizable and memorable.
       -   This colour scheme was used to keep the site simple and easy to use.
   -   #### Typography
   -   The [Saira Condensed](https://fonts.google.com/specimen/Saira+Condensed?query=saira) font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Saira Condensed is a clean font used frequently in programming, so it is both attractive and appropriate.
@@ -127,9 +131,68 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
 - JavaScript 
   - [JSHint](https://jshint.com/)
     - script.js : No issues found to show.
+- Wave
+  - [Wave](https://wave.webaim.org/)
+    - index.html : 0 Errors, 0 Contrast Errors, 2 Alerts, 5 Features, 10 Structural Elements, 9 ARIA
+      - The 2 Alerts are caused by having redundant links in the header one for the Title and one for the logo both directing to index.html.
+   
+    - game.html : 0 Errors, 0 Contrast Errors, 2 Alerts, 3 Features, 7 Structural Elements, 11 ARIA
+      - The 2 Alerts are caused by having redundant links in the home button directing to index.html and new game button to load the game.html.
 
 ### Performance Testing
 Chrome DevTools Lighthouse was used to test Performance, Accessibility, Best Practices and SEO. All tests performed in the 90-100 green score
+
+Desktop
+  - [index.html](README/light-house-results/desktop-index.pdf) : Performance 100, Accessibility 100, Best Practices 100, SEO 100
+  - [game.html](README/light-house-results/desktop-game.pdf) : Performance 100, Accessibility 100, Best Practices 100, SEO 100
+  
+Mobile
+- [index.html](README/light-house-results/mobile-index.pdf) : Performance 99, Accessibility 100, Best Practices 100, SEO 100
+- [game.html](README/light-house-results/mobile-game.pdf) : Performance 99, Accessibility 100, Best Practices 100, SEO 100
+
+
+### Feature Testing
+
+**TEST** | **ACTION** | **EXPECTATION** | **RESULT** 
+----------|----------|----------|----------
+index.html header logo | Click logo | Redirect to index.html | As expected
+index.html footer social media icons | Click icons | Open new tab to relevant social media page | As expected
+index.html Rules button | Click Rules | Rules Modal will appear | As expected
+index.html exit rules button | Click X | Rules Modal will close | As expected
+index.html Report an issue button | Click Report an issue | Report an issue Modal will appear | As expected
+index.html exit Report an issue button | Click X | Report an issue Modal will close | As expected
+index.html submit Report an issue button | Click submit | Thank you popup will appear and after 5 seconds redirect to index.html | As expected
+index.html New game button | Click New game | Redirect to game.html | As expected
+index.html responsiveness width 320px  | Resize window to 320px opening rules and report issue modals | The page content will fit clearly in the window | As expected
+index.html responsiveness width 768px  | Resize window to 768px opening rules and report issue modals | The page content will fit clearly in the window | As expected
+index.html responsiveness width 1024px  | Resize window to 1024px opening rules and report issue modals | The page content will fit clearly in the window | As expected
+index.html responsiveness width 1440px  | Resize window to 1440px opening rules and report issue modals | The page content will fit clearly in the window | As expected
+game.html header logo | Click logo | Redirect to index.html | As expected
+game.html footer social media icons | Click icons | Open new tab to relevant social media page | As expected
+game.html home button | Click home | Redirect to index.html | As expected
+game.html card image | Click next card | new card will appear | As expected
+game.html higher button | Click higher | new card will appear | As expected
+game.html lower button | Click lower | new card will appear | As expected
+game.html Streak points | Click higher | if card is higher streak points will increase if card is lower streak will reset to 0 | As expected
+game.html Streak points | Click lower | if card is lower streak points will increase if card is higher streak will reset to 0 | As expected
+game.html streak points | correctly guess 2 cards in a row | streak points will double | As expected
+game.html bank points button | Click bank points | banked points will increase by streak points value streak will reset to 0 | As expected
+game.html winner | banked points = 50 | winner page will appear | As expected
+game.html winner | click new game button | returns to game.html reset streak and bank and turn counter | As expected
+game.html responsiveness width 320px  | Resize window to 320px | The page content will fit clearly in the window | As expected
+game.html responsiveness width 768px  | Resize window to 768px | The page content will fit clearly in the window | As expected
+game.html responsiveness width 1024px  | Resize window to 1024px | The page content will fit clearly in the window | As expected
+game.html responsiveness width 1440px  | Resize window to 1440px | The page content will fit clearly in the window | As expected
+game.html winner modal responsiveness width 320px  | Resize window to 320px | The page content will fit clearly in the window | As expected
+game.html winner modal responsiveness width 768px  | Resize window to 768px | The page content will fit clearly in the window | As expected
+game.html winner modal responsiveness width 1024px  | Resize window to 1024px | The page content will fit clearly in the window | As expected
+game.html winner modal responsiveness width 1440px  | Resize window to 1440px | The page content will fit clearly in the window | As expected
+
+
+
+
+
+
 
 
 ## __Technologies Used__
@@ -170,10 +233,10 @@ The project was deployed to GitHub Pages using the following steps:
 
 1. Log in to GitHub and locate the [Higher or Lower GitHub Repository](https://github.com/TerraBite147/higher-or-lower)
 2. At the top of the Repository, locate the "Settings" Button on the menu.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
+3. Scroll down the Settings page until you locate the "Pages" Section.
+4. Under "Source", click the dropdown called "None" and select "Main Branch".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com/TerraBite147/higher-or-lower) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site [link](https://terrabite147.github.io/higher-or-lower/) in the "GitHub Pages" section.
 
 ### ***Forking the GitHub Repository***
 
@@ -216,7 +279,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - Kevin Powell's youtube tutorial on dialog https://youtu.be/TAB_v6yBXIE?si=yBL_Eyxm_FZwzFfG
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-- PiaNotes Readme layout was used as a template for this readme [PiaNotes](https://github.com/AlexaH88/pianotes/blob/main/README.md)
+- Code Institute Readme template was used as a template for this readme [Code Institute](https://github.com/Code-Institute-Org/ci-full-template)
+- - PiaNotes Readme layout was used as a template for deployment process [PiaNotes](https://github.com/AlexaH88/pianotes/blob/main/README.md)
 
 ### Media
 

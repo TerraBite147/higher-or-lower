@@ -48,11 +48,11 @@
             <!-- Buttons to redirect to game page and open rules Modal -->
             <div id="control-buttons">
                 <div class="red buttons" id="new-game"><a href="game.html">New Game</a></div>
-                <button class="buttons" id="rules"> Rules</button>
+                <button class="buttons" id="rules" aria-label="Open Rules Button"> Rules</button>
             </div>
             <!-- report issue button -->
             <div id="other-buttons">
-                <button class="buttons" id="report">Report An Issue</button>
+                <button class="buttons" id="report" aria-label="Open Report an issue Button">Report An Issue</button>
             </div>
             <!-- Bottom right higher or lower icon -->
             <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55" fill="none"
@@ -76,7 +76,7 @@
         <div class="modal-container maxWidth">
             <h1><span class="red">HIGHER</span> OR LOWER</h1>
             <!-- button used to close rules modal -->
-            <button class="exit-btn" id="exit-rules"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            <button class="exit-btn" id="exit-rules" aria-label="Exit Rules Button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                     fill="none">
                     <path
                         d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
@@ -99,7 +99,7 @@
                 Enjoy testing your card-guessing skills and aiming for victory!
             </p>
             <!-- Directs user to game.html -->
-            <div class="red center buttons" id="new-game2"><a href="game.html">New Game</a></div>
+            <div class="red center buttons" id="new-game2" aria-label="Start New Game button"><a href="game.html">New Game</a></div>
         </div>
     </dialog>
 
@@ -108,7 +108,7 @@
             <h1><span class="red">HIGHER</span> OR LOWER</h1>
             <h2>Report An Issue</h2>
             <!-- button used to close rules modal -->
-            <button class="exit-btn" id="exit-report"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            <button class="exit-btn" id="exit-report" aria-label="Exit report button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none">
                     <path
                         d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
@@ -132,7 +132,7 @@
                     placeholder="Thank you for taking the time to report the issue. Please describe the issue in as much detail as possible."
                     rows="5" cols="40" required></textarea>
                 <!-- Submit Button -->
-                <button class="red center buttons" type="submit" id="submit-btn">SUBMIT</button>
+                <button class="red center buttons" type="submit" id="submit-btn" aria-label="Submit Report Button">SUBMIT</button>
             </form>
 
             <div id="popup-message" class="popup">
