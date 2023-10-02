@@ -119,8 +119,18 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
 
 - HTML
   - [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+    - index.html : Document checking completed. No errors or warnings to show.
+    - game.html : Document checking completed. No errors or warnings to show.
 - CSS
   - [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+    - style.css : Congratulations! No Error Found.
+- JavaScript 
+  - [JSHint](https://jshint.com/)
+    - script.js : No issues found to show.
+
+### Performance Testing
+Chrome DevTools Lighthouse was used to test Performance, Accessibility, Best Practices and SEO. All tests performed in the 90-100 green score
+
 
 ## __Technologies Used__
 
@@ -205,10 +215,10 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Content 
 
 - Kevin Powell's youtube tutorial on dialog https://youtu.be/TAB_v6yBXIE?si=yBL_Eyxm_FZwzFfG
-
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- PiaNotes Readme layout was used as a template for this readme [PiaNotes](https://github.com/AlexaH88/pianotes/blob/main/README.md)
 
 ### Media
 
 - [Logo](https://www.vecteezy.com/vector-art/8552552-up-down-arrows-icon-inside-the-circle-upward-downward-business-logo-two-way-arrow-symbol-vector-for-your-website-design-logo-app-ui-illustration-eps-10)
-- [Cards](https://www.pngegg.com/en/png-nnrxg)
+- [Cards](https://code.google.com/archive/p/vector-playing-cards/downloads)
