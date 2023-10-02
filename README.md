@@ -21,7 +21,7 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
 
 - __The landing page image__
 
-  - The landing includes the Title and options that allow the user to start the game, check the rules and report and issue. 
+  - The landing includes the title and options that allow the user to start the game, check the rules and report and issue. 
   - This section introduces the user to Higher or Lower with a simple and clear design.
 
 ![home Page](/README/Images/home.png)
@@ -31,11 +31,11 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
   - When a user clicks the new game button the screen will change to the game window.
   - In the center a card will be displayed and the user will be asked to guess if the next card will be higher or lower than the current card.
   - The goal of the game to to get to 50 points with the least amount of guesses.
-  - Guessing correct will grant them a streak point, guessing multiple in a row will double the streak points. for example 1 correct guess will give 1 streak point, 2 correct will give 2, 3 correct will give 4 ect.
+  - Guessing correctly will grant them a streak point, guessing correctly multiple times in a row will double the streak points. For example 1 correct guess will give 1 streak point, 2 correct will give 2, 3 correct will give 4 ect.
   - The user will always have the option to bank the points to secure them.
   - If the user guesses wrong the streak will reset back to 0 without the option to bank.
-  - In the bottom left the banked points will be displayed.
-  - In the bottom center the current streak points will be displayed.
+  - In the Top on the window the banked points will be displayed.
+  - In the right of the banked points in the top center of the window the current streak points will be displayed.
 
 ![Game window](README/Images/game.png)
 
@@ -52,7 +52,7 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
 
   - When a user clicks the rules button the rules window will appear.
   - The rules of the game have be clearly explained.
-  - An option to start a new game is present on the page so the user can imedatly start playing rather than going but to the home page.
+  - An option to start a new game is present on the page so the user can immediately start playing rather than going but to the home page.
   - If the user presses the X button in the top right the user will be redirected to the home page.
 
 ![Rules Window](README/Images/rules.png)
@@ -116,6 +116,25 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
   -   #### Imagery
   -   The card images used are designed to be simple and easily recognizable to the user.
   -   The higher or lower logo is a simple design that is easily recognizable and memorable.
+  -   #### Wireframes
+  -   Figma was used to create the wireframes during the design process.      
+  -   Desktop Home Page Wireframe 
+  ![View](README/Wireframes/home-page.png)
+  -   Desktop Rules Page Wireframe 
+  ![View](README/Wireframes/rules-page.png)
+  -   Desktop Game Page Wireframe 
+  ![View](README/Wireframes/game-page.png)
+  -   Desktop Winner Page Wireframe 
+  ![View](README/Wireframes/winner-page.png)
+  -   Mobile Home Page Wireframe 
+  ![View](README/Wireframes/mobile-home-page.png)
+  -   Mobile Rules Page Wireframe 
+  ![View](README/Wireframes/mobile-rules-page.png)
+  -   Mobile Game Page Wireframe 
+  ![View](README/Wireframes/mobile-game-page.png)
+  -   Mobile Winner Page Wireframe 
+  ![View](README/Wireframes/mobile-winner-page.png)   
+
 ## Testing 
 
 
