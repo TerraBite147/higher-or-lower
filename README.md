@@ -150,21 +150,21 @@ Live Site : [Higher or Lower](https://terrabite147.github.io/higher-or-lower/)
   -   ### Wireframes
   -   Figma was used to create the wireframes during the design process.      
   -   Desktop Home Page Wireframe 
-  ![View](/README/wireframes/home-page.png)
+  ![View](/README/wireframes-images/home-page.png)
   -   Desktop Rules Page Wireframe 
-  ![View](/README/wireframes/rules-page.png)
+  ![View](/README/wireframes-images/rules-page.png)
   -   Desktop Game Page Wireframe 
-  ![View](/README/wireframes/game-page.png)
+  ![View](/README/wireframes-images/game-page.png)
   -   Desktop Winner Page Wireframe 
-  ![View](/README/wireframes/winner-page.png)
+  ![View](/README/wireframes-images/winner-page.png)
   -   Mobile Home Page Wireframe 
-  ![View](/README/wireframes/mobile-home-page.png)
+  ![View](/README/wireframes-images/mobile-home-page.png)
   -   Mobile Rules Page Wireframe 
-  ![View](/README/wireframes/mobile-rules-page.png)
+  ![View](/README/wireframes-images/mobile-rules-page.png)
   -   Mobile Game Page Wireframe 
-  ![View](/README/wireframes/mobile-game-page.png)
+  ![View](/README/wireframes-images/mobile-game-page.png)
   -   Mobile Winner Page Wireframe 
-  ![View](/README/wireframes/mobile-winner-page.png)   
+  ![View](/README/wireframes-images/mobile-winner-page.png)   
 
 ## __Testing__
 
